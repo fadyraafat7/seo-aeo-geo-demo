@@ -1,0 +1,1165 @@
+{
+  "url": "http://127.0.0.1:4175/",
+  "httpChecks": [
+    {
+      "path": "/",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "type": "text/plain"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "type": "text/xml"
+    },
+    {
+      "path": "/answer-review.csv",
+      "status": 200,
+      "type": "text/csv"
+    },
+    {
+      "path": "/missing-audit-page",
+      "status": 200,
+      "type": "text/html"
+    }
+  ],
+  "reports": [
+    {
+      "device": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchedAt": "2026-11-08T10:15:53.598Z",
+      "scores": {
+        "performance": 91,
+        "accessibility": 97,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 2782.40385,
+          "display": "2.8 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2782.40385,
+          "display": "2.8 s"
+        },
+        "total-blocking-time": {
+          "value": 5.806250000000091,
+          "display": "10 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 2947.8576707341763,
+          "display": "2.9 s"
+        }
+      },
+      "warnings": [],
+      "issues": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.57,
+          "display": "2.8 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.83,
+          "display": "2.8 s"
+        },
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.94,
+          "display": "2.9 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.45,
+          "display": "260 ms"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.97,
+          "display": "2.8 s"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0.5,
+          "display": "3.3 s",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "groupLabel",
+                "valueType": "text",
+                "label": "Category"
+              },
+              {
+                "key": "duration",
+                "valueType": "ms",
+                "granularity": 1,
+                "label": "Time Spent"
+              }
+            ],
+            "items": [
+              {
+                "group": "styleLayout",
+                "groupLabel": "Style & Layout",
+                "duration": 1584.3360000000002
+              },
+              {
+                "group": "other",
+                "groupLabel": "Other",
+                "duration": 1360.723999999999
+              },
+              {
+                "group": "scriptEvaluation",
+                "groupLabel": "Script Evaluation",
+                "duration": 247.8320000000009
+              },
+              {
+                "group": "paintCompositeRender",
+                "groupLabel": "Rendering",
+                "duration": 84.75200000000001
+              },
+              {
+                "group": "parseHTML",
+                "groupLabel": "Parse HTML & CSS",
+                "duration": 41.128
+              },
+              {
+                "group": "scriptParseCompile",
+                "groupLabel": "Script Parsing & Compilation",
+                "duration": 3.74
+              }
+            ],
+            "sortedBy": [
+              "duration"
+            ]
+          }
+        },
+        {
+          "id": "largest-contentful-paint-element",
+          "title": "Largest Contentful Paint element",
+          "score": 0,
+          "display": "2,780 ms",
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "node",
+                    "valueType": "node",
+                    "label": "Element"
+                  }
+                ],
+                "items": [
+                  {
+                    "node": {
+                      "type": "node",
+                      "lhId": "page-0-H1",
+                      "path": "1,HTML,1,BODY,0,DIV,2,DIV,1,MAIN,0,DIV,1,SECTION,0,DIV,1,H1",
+                      "selector": "div#overview > section.hero > div.hero-copy > h1#hero-title",
+                      "boundingRect": {
+                        "top": 206,
+                        "bottom": 314,
+                        "left": 20,
+                        "right": 392,
+                        "width": 372,
+                        "height": 108
+                      },
+                      "snippet": "<h1 id=\"hero-title\">",
+                      "nodeLabel": "Good content.\nBuilt to be found."
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "phase",
+                    "valueType": "text",
+                    "label": "Phase"
+                  },
+                  {
+                    "key": "percent",
+                    "valueType": "text",
+                    "label": "% of LCP"
+                  },
+                  {
+                    "key": "timing",
+                    "valueType": "ms",
+                    "label": "Timing"
+                  }
+                ],
+                "items": [
+                  {
+                    "phase": "TTFB",
+                    "timing": 457.38365,
+                    "percent": "16%"
+                  },
+                  {
+                    "phase": "Load Delay",
+                    "timing": 0,
+                    "percent": "0%"
+                  },
+                  {
+                    "phase": "Load Time",
+                    "timing": 0,
+                    "percent": "0%"
+                  },
+                  {
+                    "phase": "Render Delay",
+                    "timing": 2325.0202,
+                    "percent": "84%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "1-0-BUTTON",
+                  "path": "1,HTML,1,BODY,0,DIV,2,DIV,1,MAIN,0,DIV,3,SECTION,1,DIV,0,DIV,0,DIV,0,BUTTON",
+                  "selector": "div.example-shell > div.example-toolbar > div.lens-tabs > button#tab-SEO",
+                  "boundingRect": {
+                    "top": 1138,
+                    "bottom": 1170,
+                    "left": 30,
+                    "right": 87,
+                    "width": 57,
+                    "height": 32
+                  },
+                  "snippet": "<button type=\"button\" role=\"tab\" id=\"tab-SEO\" aria-controls=\"lens-panel\" aria-selected=\"true\" tabindex=\"0\" class=\"selected purple\">",
+                  "nodeLabel": "SEO",
+                  "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.42 (foreground color: #8770c2, background color: #eee8fa, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+                }
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "1-1-SPAN",
+                  "path": "1,HTML,1,BODY,0,DIV,2,DIV,1,MAIN,0,DIV,3,SECTION,1,DIV,1,DIV,0,DIV,0,DIV,1,SPAN",
+                  "selector": "div.example-content > div.browser-preview > div.browser-bar > span",
+                  "boundingRect": {
+                    "top": 1203,
+                    "bottom": 1215,
+                    "left": 166,
+                    "right": 256,
+                    "width": 90,
+                    "height": 12
+                  },
+                  "snippet": "<span>",
+                  "nodeLabel": "your-domain.com /",
+                  "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.37 (foreground color: #a3a3b0, background color: #f9f9fc, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "relatedNode": {
+                        "type": "node",
+                        "lhId": "1-2-DIV",
+                        "path": "1,HTML,1,BODY,0,DIV,2,DIV,1,MAIN,0,DIV,3,SECTION,1,DIV,1,DIV,0,DIV,0,DIV",
+                        "selector": "div.example-shell > div.example-content > div.browser-preview > div.browser-bar",
+                        "boundingRect": {
+                          "top": 1193,
+                          "bottom": 1227,
+                          "left": 34,
+                          "right": 378,
+                          "width": 344,
+                          "height": 34
+                        },
+                        "snippet": "<div class=\"browser-bar\">",
+                        "nodeLabel": "your-domain.com /"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "1-3-SPAN",
+                  "path": "1,HTML,1,BODY,0,DIV,2,DIV,1,MAIN,0,DIV,3,SECTION,1,DIV,1,DIV,0,DIV,1,DIV,0,ARTICLE,1,DIV,0,SPAN",
+                  "selector": "div > article.example-article > div.annotated-title > span.annotation",
+                  "boundingRect": {
+                    "top": 1272,
+                    "bottom": 1280,
+                    "left": 53,
+                    "right": 359,
+                    "width": 306,
+                    "height": 8
+                  },
+                  "snippet": "<span class=\"annotation seo-marker\">",
+                  "nodeLabel": "SEO · DESCRIPTIVE HEADING",
+                  "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.39 (foreground color: #9580c7, background color: #ffffff, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "relatedNode": {
+                        "type": "node",
+                        "lhId": "1-4-DIV",
+                        "path": "1,HTML,1,BODY,0,DIV,2,DIV,1,MAIN,0,DIV,3,SECTION,1,DIV",
+                        "selector": "main#main > div#overview > section#example > div.example-shell",
+                        "boundingRect": {
+                          "top": 1128,
+                          "bottom": 2557,
+                          "left": 20,
+                          "right": 392,
+                          "width": 372,
+                          "height": 1429
+                        },
+                        "snippet": "<div class=\"example-shell\">",
+                        "nodeLabel": "SEO\nAEO\nGEO\nView code\nyour-domain.com /\nREACT DEVELOPMENT\nA worked example\nSEO …"
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "impact": "serious",
+              "tags": [
+                "cat.color",
+                "wcag2aa",
+                "wcag143",
+                "TTv5",
+                "TT13.c",
+                "EN-301-549",
+                "EN-9.1.4.3",
+                "ACT",
+                "RGAAv4",
+                "RGAA-3.2.1"
+              ]
+            }
+          }
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0,
+          "display": "Est savings of 1,380 ms",
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap",
+                "totalBytes": 1450,
+                "wastedMs": 1049
+              },
+              {
+                "url": "http://127.0.0.1:4175/assets/index-D-WGLJn2.css",
+                "totalBytes": 8072,
+                "wastedMs": 158
+              }
+            ],
+            "overallSavingsMs": 1383
+          }
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0.5,
+          "display": "Est savings of 43 KiB",
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "subItemsHeading": {
+                  "key": "source",
+                  "valueType": "code"
+                },
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceBytes"
+                },
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceWastedBytes"
+                },
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:4175/assets/index-CSP42qrz.js",
+                "totalBytes": 78711,
+                "wastedBytes": 43837,
+                "wastedPercent": 55.693776486833954
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 43837,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "AE19425544CE475DB1F7CAC3D8BE0742": {
+                      "url": "http://127.0.0.1:4175/",
+                      "navStartToEndTime": 51,
+                      "transferSize": 7694,
+                      "isLongest": true,
+                      "children": {
+                        "83728.2": {
+                          "url": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap",
+                          "navStartToEndTime": 372,
+                          "transferSize": 1450,
+                          "isLongest": true,
+                          "children": {
+                            "83728.9": {
+                              "url": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K6z9mXg.woff2",
+                              "navStartToEndTime": 854,
+                              "transferSize": 37012,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "83728.27": {
+                              "url": "https://fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggexSvfedN4.woff2",
+                              "navStartToEndTime": 844,
+                              "transferSize": 24465,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "83728.3": {
+                          "url": "http://127.0.0.1:4175/assets/index-CSP42qrz.js",
+                          "navStartToEndTime": 97,
+                          "transferSize": 79072,
+                          "children": {}
+                        },
+                        "83728.4": {
+                          "url": "http://127.0.0.1:4175/assets/index-D-WGLJn2.css",
+                          "navStartToEndTime": 73,
+                          "transferSize": 8072,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 854
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "table",
+                  "headings": [
+                    {
+                      "key": "origin",
+                      "valueType": "text",
+                      "subItemsHeading": {
+                        "key": "warning"
+                      },
+                      "label": "Origin"
+                    },
+                    {
+                      "key": "source",
+                      "valueType": "node",
+                      "label": "Source"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "origin": "https://fonts.googleapis.com/",
+                      "source": {
+                        "type": "node",
+                        "lhId": "page-1-LINK",
+                        "path": "1,HTML,0,HEAD,12,LINK",
+                        "selector": "head > link",
+                        "boundingRect": {
+                          "top": 0,
+                          "bottom": 0,
+                          "left": 0,
+                          "right": 0,
+                          "width": 0,
+                          "height": 0
+                        },
+                        "snippet": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">",
+                        "nodeLabel": "head > link"
+                      },
+                      "subItems": {
+                        "type": "subitems",
+                        "items": []
+                      }
+                    },
+                    {
+                      "origin": "https://fonts.gstatic.com/",
+                      "source": {
+                        "type": "node",
+                        "lhId": "page-2-LINK",
+                        "path": "1,HTML,0,HEAD,13,LINK",
+                        "selector": "head > link",
+                        "boundingRect": {
+                          "top": 0,
+                          "bottom": 0,
+                          "left": 0,
+                          "right": 0,
+                          "width": 0,
+                          "height": 0
+                        },
+                        "snippet": "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin=\"\">",
+                        "nodeLabel": "head > link"
+                      },
+                      "subItems": {
+                        "type": "subitems",
+                        "items": []
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 1,500 ms",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap",
+                "totalBytes": 1450,
+                "wastedMs": 1049
+              },
+              {
+                "url": "http://127.0.0.1:4175/assets/index-D-WGLJn2.css",
+                "totalBytes": 8072,
+                "wastedMs": 158
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "device": "desktop",
+      "lighthouseVersion": "12.8.2",
+      "fetchedAt": "2026-11-08T10:16:07.126Z",
+      "scores": {
+        "performance": 99,
+        "accessibility": 97,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 821.19515,
+          "display": "0.8 s"
+        },
+        "largest-contentful-paint": {
+          "value": 821.19515,
+          "display": "0.8 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.003581355824750312,
+          "display": "0.004"
+        },
+        "speed-index": {
+          "value": 821.19515,
+          "display": "0.8 s"
+        }
+      },
+      "warnings": [],
+      "issues": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.94,
+          "display": "0.8 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.98,
+          "display": "0.8 s"
+        },
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.99,
+          "display": "0.8 s"
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "score": 0,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "1-0-BUTTON",
+                  "path": "1,HTML,1,BODY,0,DIV,2,DIV,1,MAIN,0,DIV,3,SECTION,1,DIV,0,DIV,0,DIV,0,BUTTON",
+                  "selector": "div.example-shell > div.example-toolbar > div.lens-tabs > button#tab-SEO",
+                  "boundingRect": {
+                    "top": 855,
+                    "bottom": 887,
+                    "left": 293,
+                    "right": 383,
+                    "width": 90,
+                    "height": 32
+                  },
+                  "snippet": "<button type=\"button\" role=\"tab\" id=\"tab-SEO\" aria-controls=\"lens-panel\" aria-selected=\"true\" tabindex=\"0\" class=\"selected purple\">",
+                  "nodeLabel": "SEO\nlens",
+                  "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.42 (foreground color: #8770c2, background color: #eee8fa, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+                }
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "1-1-SPAN",
+                  "path": "1,HTML,1,BODY,0,DIV,2,DIV,1,MAIN,0,DIV,3,SECTION,1,DIV,0,DIV,0,DIV,0,BUTTON,2,SPAN",
+                  "selector": "div.example-toolbar > div.lens-tabs > button#tab-SEO > span",
+                  "boundingRect": {
+                    "top": 865,
+                    "bottom": 877,
+                    "left": 355,
+                    "right": 371,
+                    "width": 17,
+                    "height": 12
+                  },
+                  "snippet": "<span>",
+                  "nodeLabel": "lens",
+                  "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.42 (foreground color: #8770c2, background color: #eee8fa, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "relatedNode": {
+                        "type": "node",
+                        "lhId": "1-0-BUTTON",
+                        "path": "1,HTML,1,BODY,0,DIV,2,DIV,1,MAIN,0,DIV,3,SECTION,1,DIV,0,DIV,0,DIV,0,BUTTON",
+                        "selector": "div.example-shell > div.example-toolbar > div.lens-tabs > button#tab-SEO",
+                        "boundingRect": {
+                          "top": 855,
+                          "bottom": 887,
+                          "left": 293,
+                          "right": 383,
+                          "width": 90,
+                          "height": 32
+                        },
+                        "snippet": "<button type=\"button\" role=\"tab\" id=\"tab-SEO\" aria-controls=\"lens-panel\" aria-selected=\"true\" tabindex=\"0\" class=\"selected purple\">",
+                        "nodeLabel": "SEO\nlens"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "1-2-SPAN",
+                  "path": "1,HTML,1,BODY,0,DIV,2,DIV,1,MAIN,0,DIV,3,SECTION,1,DIV,1,DIV,0,DIV,0,DIV,1,SPAN",
+                  "selector": "div.example-content > div.browser-preview > div.browser-bar > span",
+                  "boundingRect": {
+                    "top": 930,
+                    "bottom": 942,
+                    "left": 543,
+                    "right": 633,
+                    "width": 90,
+                    "height": 12
+                  },
+                  "snippet": "<span>",
+                  "nodeLabel": "your-domain.com /",
+                  "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.37 (foreground color: #a3a3b0, background color: #f9f9fc, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "relatedNode": {
+                        "type": "node",
+                        "lhId": "1-3-DIV",
+                        "path": "1,HTML,1,BODY,0,DIV,2,DIV,1,MAIN,0,DIV,3,SECTION,1,DIV,1,DIV,0,DIV,0,DIV",
+                        "selector": "div.example-shell > div.example-content > div.browser-preview > div.browser-bar",
+                        "boundingRect": {
+                          "top": 919,
+                          "bottom": 953,
+                          "left": 299,
+                          "right": 867,
+                          "width": 568,
+                          "height": 34
+                        },
+                        "snippet": "<div class=\"browser-bar\">",
+                        "nodeLabel": "your-domain.com /"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "1-4-SPAN",
+                  "path": "1,HTML,1,BODY,0,DIV,2,DIV,1,MAIN,0,DIV,3,SECTION,1,DIV,1,DIV,0,DIV,1,DIV,0,ARTICLE,1,DIV,0,SPAN",
+                  "selector": "div > article.example-article > div.annotated-title > span.annotation",
+                  "boundingRect": {
+                    "top": 1003,
+                    "bottom": 1011,
+                    "left": 322,
+                    "right": 844,
+                    "width": 522,
+                    "height": 8
+                  },
+                  "snippet": "<span class=\"annotation seo-marker\">",
+                  "nodeLabel": "SEO · DESCRIPTIVE HEADING",
+                  "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.39 (foreground color: #9580c7, background color: #ffffff, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "relatedNode": {
+                        "type": "node",
+                        "lhId": "1-5-DIV",
+                        "path": "1,HTML,1,BODY,0,DIV,2,DIV,1,MAIN,0,DIV,3,SECTION,1,DIV",
+                        "selector": "main#main > div#overview > section#example > div.example-shell",
+                        "boundingRect": {
+                          "top": 844,
+                          "bottom": 1578,
+                          "left": 277,
+                          "right": 1293,
+                          "width": 1016,
+                          "height": 734
+                        },
+                        "snippet": "<div class=\"example-shell\">",
+                        "nodeLabel": "SEO\nlens\nAEO\nlens\nGEO\nlens\nView code\nyour-domain.com /\nREACT DEVELOPMENT\nA work…"
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "impact": "serious",
+              "tags": [
+                "cat.color",
+                "wcag2aa",
+                "wcag143",
+                "TTv5",
+                "TT13.c",
+                "EN-301-549",
+                "EN-9.1.4.3",
+                "ACT",
+                "RGAAv4",
+                "RGAA-3.2.1"
+              ]
+            }
+          }
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0,
+          "display": "Est savings of 480 ms",
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap",
+                "totalBytes": 1102,
+                "wastedMs": 313
+              },
+              {
+                "url": "http://127.0.0.1:4175/assets/index-D-WGLJn2.css",
+                "totalBytes": 8072,
+                "wastedMs": 52
+              }
+            ],
+            "overallSavingsMs": 476
+          }
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0.5,
+          "display": "Est savings of 43 KiB",
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "subItemsHeading": {
+                  "key": "source",
+                  "valueType": "code"
+                },
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceBytes"
+                },
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceWastedBytes"
+                },
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:4175/assets/index-CSP42qrz.js",
+                "totalBytes": 78711,
+                "wastedBytes": 43837,
+                "wastedPercent": 55.693776486833954
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 43837,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "B3C5597CEDF4FA0B6106D7DDAFC5A475": {
+                      "url": "http://127.0.0.1:4175/",
+                      "navStartToEndTime": 69,
+                      "transferSize": 7694,
+                      "isLongest": true,
+                      "children": {
+                        "86564.2": {
+                          "url": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap",
+                          "navStartToEndTime": 166,
+                          "transferSize": 1102,
+                          "isLongest": true,
+                          "children": {
+                            "86564.27": {
+                              "url": "https://fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggexSvfedN4.woff2",
+                              "navStartToEndTime": 611,
+                              "transferSize": 24465,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "86564.9": {
+                              "url": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K6z9mXg.woff2",
+                              "navStartToEndTime": 603,
+                              "transferSize": 37012,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "86564.3": {
+                          "url": "http://127.0.0.1:4175/assets/index-CSP42qrz.js",
+                          "navStartToEndTime": 94,
+                          "transferSize": 79072,
+                          "children": {}
+                        },
+                        "86564.4": {
+                          "url": "http://127.0.0.1:4175/assets/index-D-WGLJn2.css",
+                          "navStartToEndTime": 68,
+                          "transferSize": 8072,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 611
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "table",
+                  "headings": [
+                    {
+                      "key": "origin",
+                      "valueType": "text",
+                      "subItemsHeading": {
+                        "key": "warning"
+                      },
+                      "label": "Origin"
+                    },
+                    {
+                      "key": "source",
+                      "valueType": "node",
+                      "label": "Source"
+                    }
+                  ],
+                  "items": [
+                    {
+                      "origin": "https://fonts.googleapis.com/",
+                      "source": {
+                        "type": "node",
+                        "lhId": "page-5-LINK",
+                        "path": "1,HTML,0,HEAD,12,LINK",
+                        "selector": "head > link",
+                        "boundingRect": {
+                          "top": 0,
+                          "bottom": 0,
+                          "left": 0,
+                          "right": 0,
+                          "width": 0,
+                          "height": 0
+                        },
+                        "snippet": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">",
+                        "nodeLabel": "head > link"
+                      },
+                      "subItems": {
+                        "type": "subitems",
+                        "items": []
+                      }
+                    },
+                    {
+                      "origin": "https://fonts.gstatic.com/",
+                      "source": {
+                        "type": "node",
+                        "lhId": "page-6-LINK",
+                        "path": "1,HTML,0,HEAD,13,LINK",
+                        "selector": "head > link",
+                        "boundingRect": {
+                          "top": 0,
+                          "bottom": 0,
+                          "left": 0,
+                          "right": 0,
+                          "width": 0,
+                          "height": 0
+                        },
+                        "snippet": "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin=\"\">",
+                        "nodeLabel": "head > link"
+                      },
+                      "subItems": {
+                        "type": "subitems",
+                        "items": []
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 470 ms",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap",
+                "totalBytes": 1102,
+                "wastedMs": 313
+              },
+              {
+                "url": "http://127.0.0.1:4175/assets/index-D-WGLJn2.css",
+                "totalBytes": 8072,
+                "wastedMs": 52
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "limits": "Single lab run per device against the production build on localhost. Not real-user data, Google rich-result validation, a ranking score, or an AEO/GEO citation measurement."
+}

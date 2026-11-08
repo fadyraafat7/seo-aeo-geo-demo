@@ -1,0 +1,22 @@
+{
+  "name": "signal-search-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir .ssg && node scripts/prerender.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "check": "node scripts/check.mjs",
+    "audit:local": "npm run build && npm run check && node scripts/audit.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "chrome-launcher": "^1.2.3",
+    "lighthouse": "^12.8.2",
+    "vite": "^7.2.2"
+  }
+}
